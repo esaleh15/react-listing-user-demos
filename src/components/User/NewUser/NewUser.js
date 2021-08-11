@@ -3,9 +3,18 @@ import UserForm from '../UserForm/UserForm';
 
 const NewUser = (props) => {
 
+	const saveUserDataHandler = (enteredUserData) => {
+		const userData = {
+			...enteredUserData,
+			id: Math.random().toString()
+		};
+		props.onAddUser(enteredUserData);
+	};
+
+
 	return (
 			<div>
-				<UserForm></UserForm>
+				<UserForm onSaveUserData={saveUserDataHandler}></UserForm>
 			</div>
 		)
 
