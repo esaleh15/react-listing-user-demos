@@ -1,13 +1,12 @@
 import Card from '../../Card/Card';
+import classes from './UserItem.module.css';
 
 const UserItem = (props) => {
 	return (
-			<li>
-				<Card className='user-item'>
-					{props.id}
-					{props.userName}
-					{props.age}
-				</Card>
+			<li className={`${classes['user-item__list']}`}>
+					<div className={`${classes['user-item__description']}`}>
+						<h3>{props.userName} ({props.age} years old)</h3>
+					</div>
 			</li>
 		)
 };

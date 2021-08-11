@@ -1,0 +1,9 @@
+.user-item__description {
+	text-align: left;
+	border: 1px solid grey;
+	padding: 0 0 0 5px;
+}
+
+.user-item__list {
+	padding-bottom: 10px;
+}
