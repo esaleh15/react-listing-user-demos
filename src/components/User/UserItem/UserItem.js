@@ -1,4 +1,3 @@
-import Card from '../../Card/Card';
 import classes from './UserItem.module.css';
 
 const UserItem = (props) => {
