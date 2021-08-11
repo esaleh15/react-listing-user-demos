@@ -4,7 +4,7 @@ import classes from './UserForm.module.css';
 const UserForm = (props) => {
 
 	const [enteredUsername, setEnteredUsername] = useState('');
-	const [enteredAge, setEnteredAge] = useState(''); 
+	const [enteredAge, setEnteredAge] = useState('');
 
 	const userNameChangeHandler = (event) => {
 		setEnteredUsername(event.target.value);

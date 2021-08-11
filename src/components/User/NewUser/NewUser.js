@@ -8,7 +8,7 @@ const NewUser = (props) => {
 			...enteredUserData,
 			id: Math.random().toString()
 		};
-		props.onAddUser(enteredUserData);
+		props.onAddUser(userData);
 	};
 
 
