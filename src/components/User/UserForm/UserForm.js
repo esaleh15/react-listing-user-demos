@@ -1,21 +1,24 @@
-import './UserForm.module.css';
+import classes from './UserForm.module.css';
 
 const UserForm = (props) => {
 
 	return (
 			<div>
 				<form>
-					<div className='user-form__container'>
-						<div className='user-form__text-input'>
+					<div className={`${classes['user-form__container']}`}>
+						<div className={`${classes['user-form__text-input']}`}>
 							<label>User Name</label>
+							<br/>
 							<input type="text"/>
 						</div>
-						<div className='user-form__text-input'>
+						<div className={`${classes['user-form__text-input']}`}>
 							<label>Age (Years)</label>
+							<br/>
 							<input type="text"/>
 						</div>
-						<div className='user-form__buttons'></div>
-						<button type='button'>Add User</button>
+						<div className={`${classes['user-form']}`}>
+							<button type='button'>Add User</button>
+						</div>
 					</div>
 				</form>
 			</div>

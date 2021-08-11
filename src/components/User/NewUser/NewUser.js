@@ -5,7 +5,7 @@ const NewUser = (props) => {
 
 	return (
 			<div>
-				<UserForm>props.children</UserForm>
+				<UserForm></UserForm>
 			</div>
 		)
 
