@@ -16,7 +16,13 @@ const UserForm = (props) => {
 
 	const submitHandler = (event) => {
 		event.preventDefault();
+		if (enteredUsername.trim().length === 0 || enteredAge.trim().length === 0) {
+			return;
+		}
 
+		if (+enteredAge < 1) {
+			return;
+		}
 		const userData = {
 			userName: enteredUsername,
 			age: enteredAge
@@ -39,7 +45,7 @@ const UserForm = (props) => {
 						<div className={`${classes['user-form__text-input']}`}>
 							<label>Age (Years)</label>
 							<br/>
-							<input type="text" value={enteredAge} onChange={ageChangeHandler}/>
+							<input type="number" value={enteredAge} onChange={ageChangeHandler}/>
 						</div>
 						<div className={`${classes['user-form']}`}>
 							<button type='submit'>Add User</button>
