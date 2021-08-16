@@ -13,9 +13,9 @@ const NewUser = (props) => {
 
 
 	return (
-			<div>
+			<>
 				<UserForm onSaveUserData={saveUserDataHandler}></UserForm>
-			</div>
+			</>
 		)
 
 };

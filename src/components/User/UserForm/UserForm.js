@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from '../../Modal/Modal';
+import Wrapper from '../../Helpers/Wrappers/Wrapper';
 import classes from './UserForm.module.css';
 
 const UserForm = (props) => {
@@ -48,7 +49,7 @@ const UserForm = (props) => {
 
 
 	return (
-			<div>
+			<Wrapper>
 			{error && <Modal title={error.title} message={error.message} onConfirm={errorHandler}></Modal>}
 				<form onSubmit={submitHandler}>
 					<div className={`${classes['user-form__container']}`}>
@@ -67,7 +68,7 @@ const UserForm = (props) => {
 						</div>
 					</div>
 				</form>
-			</div>
+			</Wrapper>
 		)
 
 };
